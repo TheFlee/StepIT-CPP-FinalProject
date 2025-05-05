@@ -1,0 +1,211 @@
+Category: Math
+Test: Basic Arithmetic
+Question: What is 2 + 2?
+Answer: 5 | false
+Answer: 3 | false
+Answer: 6 | false
+Answer: 4 | true
+Question: What is 9 - 5?
+Answer: 4 | true
+Answer: 5 | false
+Answer: 2 | false
+Answer: 3 | false
+Question: What is 3 * 3?
+Answer: 9 | true
+Answer: 8 | false
+Answer: 12 | false
+Answer: 6 | false
+Question: What is 8 / 2?
+Answer: 2 | false
+Answer: 3 | false
+Answer: 6 | false
+Answer: 4 | true
+Question: What is 7 + 6?
+Answer: 11 | false
+Answer: 12 | false
+Answer: 14 | false
+Answer: 13 | true
+Question: What is 15 - 9?
+Answer: 4 | false
+Answer: 6 | true
+Answer: 7 | false
+Answer: 5 | false
+Question: What is 10 * 0?
+Answer: -1 | false
+Answer: 1 | false
+Answer: 10 | false
+Answer: 0 | true
+Question: What is 100 / 10?
+Answer: 10 | true
+Answer: 1 | false
+Answer: 20 | false
+Answer: 5 | false
+Question: What is 11 + 12?
+Answer: 23 | true
+Answer: 24 | false
+Answer: 22 | false
+Answer: 21 | false
+Question: What is 6 - 6?
+Answer: 0 | true
+Answer: 6 | false
+Answer: 2 | false
+Answer: 1 | false
+
+Test: Fractions
+Question: What is 1/2 + 1/4?
+Answer: 1/2 | false
+Answer: 3/4 | true
+Answer: 2/4 | false
+Answer: 1 | false
+Question: What is 3/4 - 1/2?
+Answer: 1/4 | true
+Answer: 2/4 | false
+Answer: 3/4 | false
+Answer: 1/2 | false
+Question: What is 2/3 * 3/2?
+Answer: 3 | false
+Answer: 1 | true
+Answer: 2/3 | false
+Answer: 6 | false
+Question: What is 5/6 + 1/6?
+Answer: 1 | true
+Answer: 5/7 | false
+Answer: 6/6 | false
+Answer: 1/2 | false
+Question: What is 4/5 - 1/5?
+Answer: 4/6 | false
+Answer: 3/5 | true
+Answer: 1/5 | false
+Answer: 2/5 | false
+Question: What is 2/3 + 2/3?
+Answer: 3/3 | false
+Answer: 1 | false
+Answer: 2 | false
+Answer: 4/3 | true
+Question: What is 1/4 * 4?
+Answer: 1 | true
+Answer: 0 | false
+Answer: 4 | false
+Answer: 2 | false
+Question: What is 1 - 1/3?
+Answer: 1/2 | false
+Answer: 3/3 | false
+Answer: 2/3 | true
+Answer: 1/3 | false
+Question: What is 2/3 of 9?
+Answer: 6 | true
+Answer: 3 | false
+Answer: 9 | false
+Answer: 4 | false
+Question: What is 3/5 * 10?
+Answer: 12 | false
+Answer: 6 | true
+Answer: 8 | false
+Answer: 5 | false
+
+Category: Science
+Test: Physics Basics
+Question: What is the speed of light?
+Answer: 1,000 km/s | false
+Answer: 100,000 km/s | false
+Answer: 300,000 km/s | true
+Answer: 150,000 km/s | false
+Question: What is the unit of force?
+Answer: Pascal | false
+Answer: Watt | false
+Answer: Newton | true
+Answer: Joule | false
+Question: What is the formula for force?
+Answer: F = m / a | false
+Answer: F = m * a | true
+Answer: F = m + a | false
+Answer: F = a / m | false
+Question: What is gravity on Earth?
+Answer: 9.8 m/s^2 | true
+Answer: 8.9 m/s^2 | false
+Answer: 7.5 m/s^2 | false
+Answer: 10.5 m/s^2 | false
+Question: What is unit of energy?
+Answer: Joule | true
+Answer: Volt | false
+Answer: Watt | false
+Answer: Newton | false
+Question: What does a thermometer measure?
+Answer: Length | false
+Answer: Pressure | false
+Answer: Energy | false
+Answer: Temperature | true
+Question: What is the SI unit of mass?
+Answer: Pound | false
+Answer: Ton | false
+Answer: Kilogram | true
+Answer: Gram | false
+Question: What does an ammeter measure?
+Answer: Resistance | false
+Answer: Voltage | false
+Answer: Power | false
+Answer: Electric current | true
+Question: What type of energy does a battery store?
+Answer: Thermal | false
+Answer: Magnetic | false
+Answer: Chemical | true
+Answer: Kinetic | false
+Question: What is kinetic energy?
+Answer: Electric energy | false
+Answer: Stored energy | false
+Answer: Heat energy | false
+Answer: Energy of motion | true
+
+Test: Chemistry Basics
+Question: What is H2O?
+Answer: Hydrogen | false
+Answer: Water | true
+Answer: Salt | false
+Answer: Oxygen | false
+Question: What is the atomic number of carbon?
+Answer: 8 | false
+Answer: 12 | false
+Answer: 6 | true
+Answer: 4 | false
+Question: What is NaCl?
+Answer: Salt | true
+Answer: Water | false
+Answer: Alcohol | false
+Answer: Sugar | false
+Question: What is the pH of pure water?
+Answer: 10 | false
+Answer: 5 | false
+Answer: 7 | true
+Answer: 0 | false
+Question: What element is a noble gas?
+Answer: Hydrogen | false
+Answer: Carbon | false
+Answer: Oxygen | false
+Answer: Neon | true
+Question: What is the formula for methane?
+Answer: C2H6 | false
+Answer: CO2 | false
+Answer: CH4 | true
+Answer: H2O | false
+Question: What is the most reactive metal?
+Answer: Lead | false
+Answer: Zinc | false
+Answer: Francium | true
+Answer: Iron | false
+Question: What is the periodic table?
+Answer: List of molecules | false
+Answer: Table of isotopes | false
+Answer: Arrangement of elements | true
+Answer: Element colors | false
+Question: What is the lightest element?
+Answer: Helium | false
+Answer: Hydrogen | true
+Answer: Oxygen | false
+Answer: Carbon | false
+Question: What gas do plants absorb?
+Answer: N2 | false
+Answer: CO2 | true
+Answer: H2 | false
+Answer: O2 | false
+
+
