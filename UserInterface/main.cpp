@@ -26,7 +26,6 @@ int main() {
         case 2:
             system("cls");
             currentUser.loginUser();
-            _getch();
             if (currentUser.isLoggedIn()) isAuthenticated = true;
             break;
         default: 

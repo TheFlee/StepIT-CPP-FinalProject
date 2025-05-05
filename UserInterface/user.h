@@ -25,6 +25,10 @@ public:
 	void viewResults();
 	void takeTest();
 
+	void saveProgress(const string& category, const string& test, int questionIndex, int score);
+	bool loadProgress(string& category, string& test, int& questionIndex, int& score);
+	void deleteProgress();
+
 
 };
 
