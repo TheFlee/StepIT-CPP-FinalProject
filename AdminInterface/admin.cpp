@@ -500,9 +500,12 @@ void Admin::exportTests() {
 }
 
 void Admin::importTests() {
-    ifstream file("../Include/tests.txt");
+    cout << "Enter file path: ";
+    string filename;
+    getline(cin, filename);
+    ifstream file(filename);
     if (!file) {
-        cout << "tests.txt not found." << endl;
+        cout << filename <<" not found." << endl;
         return;
     }
 
@@ -546,5 +549,5 @@ void Admin::importTests() {
         }
     }
 
-    cout << "Imported tests from tests.txt." << endl;
+    cout << "Imported from " << filename << "." << endl;
 }
