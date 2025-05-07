@@ -6,7 +6,7 @@ void drawBox(const string&);
 int main() {
     Admin admin;
     int choice;
-    admin.importTests();
+    loadTestsFromFile("../Include/tests.txt", allCategories);
 
     while (true) {
         if (!admin.isLoggedIn()) {
