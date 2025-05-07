@@ -1,7 +1,5 @@
 #pragma once
 #include "../Include/Tests.h"
-
-using namespace std;
 extern vector<Category> allCategories;
 
 class User

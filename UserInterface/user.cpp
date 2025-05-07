@@ -17,9 +17,12 @@ string xorEncrypt(const string& input, char key = 'K') {
 }
 
 void User::registerUser() {
-    cout << "Enter full name: "; getline(cin, fullName);
-    cout << "Enter address: "; getline(cin, address);
-    cout << "Enter phone number: "; getline(cin, phoneNumber);
+    cout << "Enter full name: "; 
+    getline(cin, fullName);
+    cout << "Enter address: "; 
+    getline(cin, address);
+    cout << "Enter phone number: "; 
+    getline(cin, phoneNumber);
 
     string login;
     string encryptedLogin;
@@ -47,7 +50,7 @@ void User::registerUser() {
         }
 
         if (exists) {
-            cout << "That login is already taken. Please choose another.\n";
+            cout << "That login is already taken. Please choose another." << endl;
         }
         else {
             this->login = login;
@@ -61,8 +64,7 @@ void User::registerUser() {
 
     ofstream outFile("../Include/users.txt", ios::app);
     if (outFile.is_open()) {
-        outFile << fullName << "," << address << "," << phoneNumber << ","
-            << encryptedLogin << "," << encryptedPassword << endl;
+        outFile << fullName << "," << address << "," << phoneNumber << "," << encryptedLogin << "," << encryptedPassword << endl;
     }
 }
 
@@ -92,11 +94,11 @@ void User::loginUser() {
             login = storedLogin;
             password = storedPassword;
             loggedIn = true;
-            cout << "Login successful.\n";
+            cout << "Login successful." << endl;
             return;
         }
     }
-    cout << "Login failed. Invalid credentials.\n";
+    cout << "Login failed. Invalid credentials." << endl;
     loggedIn = false;
 }
 
@@ -111,7 +113,7 @@ void User::takeTest() {
     int score = 0;
 
     if (hasProgress) {
-        cout << "You have an unfinished test: '" << savedTest << "' in category '" << savedCategory << "'.\n";
+        cout << "You have an unfinished test: '" << savedTest << "' in category '" << savedCategory << "'." << endl;
         cout << "1) Continue\n2) Discard and start a new test\nChoose: ";
         int contChoice;
         cin >> contChoice;
@@ -132,7 +134,7 @@ void User::takeTest() {
                 }
             }
             if (!selectedCategoryPtr || !selectedTestPtr) {
-                cout << "Saved test not found. Starting from scratch.\n";
+                cout << "Saved test not found. Starting from scratch." << endl;
             }
             else {
                 currentIndex = savedIndex;
@@ -146,11 +148,11 @@ void User::takeTest() {
 
     if (!selectedTestPtr) {
         if (allCategories.empty()) {
-            cout << "No tests available.\n";
+            cout << "No tests available." << endl;
             return;
         }
 
-        cout << "\nAvailable Categories:\n";
+        cout << "Available Categories:" << endl;
         for (size_t i = 0; i < allCategories.size(); ++i) {
             cout << i + 1 << ") " << allCategories[i].name << endl;
         }
@@ -162,18 +164,18 @@ void User::takeTest() {
         system("cls");
 
         if (catChoice < 1 || catChoice > allCategories.size()) {
-            cout << "Invalid choice.\n";
+            cout << "Invalid choice." << endl;
             return;
         }
 
         selectedCategoryPtr = &allCategories[catChoice - 1];
 
         if (selectedCategoryPtr->tests.empty()) {
-            cout << "No tests in this category.\n";
+            cout << "No tests in this category." << endl;
             return;
         }
 
-        cout << "\nAvailable Tests in '" << selectedCategoryPtr->name << "':\n";
+        cout << "Available Tests in '" << selectedCategoryPtr->name << "':" << endl;
         for (size_t i = 0; i < selectedCategoryPtr->tests.size(); ++i) {
             cout << i + 1 << ") " << selectedCategoryPtr->tests[i].name << endl;
         }
@@ -185,7 +187,7 @@ void User::takeTest() {
         system("cls");
 
         if (testChoice < 1 || testChoice > selectedCategoryPtr->tests.size()) {
-            cout << "Invalid choice.\n";
+            cout << "Invalid choice." << endl;
             return;
         }
 
@@ -198,7 +200,8 @@ void User::takeTest() {
     Category& selectedCategory = *selectedCategoryPtr;
 
     for (size_t i = currentIndex; i < selectedTest.questions.size(); ++i) {
-        cout << "\nQ" << i + 1 << ": " << selectedTest.questions[i].text << endl;
+        system("cls");
+        cout << "Q" << i + 1 << ": " << selectedTest.questions[i].text << endl;
         for (size_t j = 0; j < selectedTest.questions[i].answers.size(); ++j) {
             cout << j + 1 << ") " << selectedTest.questions[i].answers[j].text << endl;
         }
@@ -210,7 +213,7 @@ void User::takeTest() {
 
         if (userChoice == 0) {
             saveProgress(selectedCategory.name, selectedTest.name, i, score);
-            cout << "Progress saved. You can continue later.\n";
+            cout << "Progress saved. You can continue later." << endl;
             return;
         }
 
@@ -221,8 +224,8 @@ void User::takeTest() {
 
         saveProgress(selectedCategory.name, selectedTest.name, i + 1, score);
     }
-
-    cout << "\nTest Results:\n";
+    system("cls");
+    cout << "Test Results:" << endl;
     cout << "Correct Answers: " << score << "/" << selectedTest.questions.size() << endl;
     cout << "Score: " << (score * 12) / selectedTest.questions.size() << "/12" << endl;
     cout << "Percentage: " << (static_cast<double>(score) / selectedTest.questions.size()) * 100 << "%" << endl;
@@ -243,7 +246,7 @@ void User::takeTest() {
 void User::viewResults() {
     ifstream inFile("../Include/" + fullName + "_results.txt", ios::in);
     if (!inFile.is_open()) {
-        cout << "No results found for user.\n";
+        cout << "No results found for user." << endl;
         return;
     }
 

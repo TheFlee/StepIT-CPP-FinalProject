@@ -5,7 +5,8 @@
 #include <iostream>
 #include <sstream>
 #include "conio.h"
-
+#include <map>
+#include "Windows.h"
 
 using namespace std;
 

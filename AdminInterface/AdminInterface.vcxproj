@@ -127,10 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Include\Tests.cpp" />
+    <ClCompile Include="..\UserInterface\user.cpp" />
     <ClCompile Include="admin.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Include\Tests.h" />
+    <ClInclude Include="..\UserInterface\user.h" />
     <ClInclude Include="admin.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

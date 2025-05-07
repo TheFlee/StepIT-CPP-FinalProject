@@ -3,7 +3,7 @@
 void loadTestsFromFile(const string& filename, vector<Category>& categories) {
     ifstream inFile(filename);
     if (!inFile.is_open()) {
-        cout << "Could not open test file.\n";
+        cout << "Could not open test file." << endl;
         return;
     }
 

@@ -50,7 +50,6 @@ Answer: 0 | true
 Answer: 6 | false
 Answer: 2 | false
 Answer: 1 | false
-
 Test: Fractions
 Question: What is 1/2 + 1/4?
 Answer: 1/2 | false
@@ -102,7 +101,6 @@ Answer: 12 | false
 Answer: 6 | true
 Answer: 8 | false
 Answer: 5 | false
-
 Category: Science
 Test: Physics Basics
 Question: What is the speed of light?
@@ -155,7 +153,6 @@ Answer: Electric energy | false
 Answer: Stored energy | false
 Answer: Heat energy | false
 Answer: Energy of motion | true
-
 Test: Chemistry Basics
 Question: What is H2O?
 Answer: Hydrogen | false
@@ -207,5 +204,4 @@ Answer: N2 | false
 Answer: CO2 | true
 Answer: H2 | false
 Answer: O2 | false
-
 
